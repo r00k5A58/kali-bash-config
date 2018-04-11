@@ -5,7 +5,7 @@ cp ./.gdbinit ~
 cp ./.vimrc ~
 echo "[*] Config files copied to their places"
 echo "[*] Installing GoLang"
-apt install golang -y
+apt -qq install golang -y
 echo "export GOPATH=~/go" > ~/.bashrc
 echo "[*] GoLang installed and configured"
 echo "[*] Setting up bash environment"
