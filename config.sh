@@ -6,6 +6,7 @@ find / -type f -iname *gnome.terminal.desktop -exec sed -i -e "s/^Exec=gnome-ter
 cp ./.tmux.conf ~
 echo "[*] Tmux configured"
 cp ./.gdbinit ~
+sleep 1
 cp ./.vimrc ~
 echo "[*] Config files copied to their places"
 echo "[*] Installing GoLang"
