@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "[*] Prepping apt"
+apt update
 echo "[*] Installing and configure tmux"
 apt install tmux -y
 find / -type f -iname *gnome.terminal.desktop -exec sed -i -e "s/^Exec=gnome-terminal/Exec=gnome-terminal -e \"tmux -2\"/" {} \;
@@ -18,7 +20,7 @@ echo 'export PS1="[\[$(tput sgr0)\]\[\033[38;5;14m\]\t\[$(tput sgr0)\]\[\033[38;
 echo "[*] Configuring gdb and gef"
 cp ./.gdbinit ~
 echo "[*] Installing python re-reqs"
-apt install python3-pip
+apt install python3-pip -y
 pip3 install keystone-engine
 pip3 install unicorn
 pip3 install capstone
