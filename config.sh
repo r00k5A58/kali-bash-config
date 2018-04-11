@@ -18,6 +18,7 @@ echo 'export PS1="[\[$(tput sgr0)\]\[\033[38;5;14m\]\t\[$(tput sgr0)\]\[\033[38;
 echo "[*] Configuring gdb and gef"
 cp ./.gdbinit ~
 echo "[*] Installing python re-reqs"
+apt install python3-pip
 pip3 install keystone-engine
 pip3 install unicorn
 pip3 install capstone
