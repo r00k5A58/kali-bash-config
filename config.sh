@@ -21,10 +21,8 @@ echo "[*] Configuring gdb and gef"
 cp ./.gdbinit ~
 echo "[*] Installing python re-reqs"
 apt install python3-pip -y
-pip3 install keystone-engine
-pip3 install unicorn
-pip3 install capstone
-pip3 install ropper
+apt install cmake -y
+pip3 install capstone unicorn keystone-engine ropper retdec-python
 wget -O ~/.gdbinit-gef.py -q https://github.com/hugsy/gef/raw/master/gef.py
 echo "source ~/.gdbinit-gef.py" >> ~/.gdbinit
 echo "[*] gdb configuration complete"
