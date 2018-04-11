@@ -2,6 +2,10 @@
 
 echo "[*] Prepping apt"
 apt update
+apt install apt-transport-https
+sed -i -e "s/^deb http:/deb https:/" /etc/apt/sources.list
+apt update
+echo "[*] apt configured for https and updated"
 echo "[*] Installing and configure tmux"
 apt install tmux -y
 find / -type f -iname *gnome.terminal.desktop -exec sed -i -e "s/^Exec=gnome-terminal/Exec=gnome-terminal -e \"tmux -2\"/" {} \;
