@@ -5,9 +5,10 @@ scripts and config files to auto config new kali bash environments
 * Run after cloning. This will:
 * Install golang, export GOPATH
 * Copy the config files to their appropriate places
-* Installs and configured PEDA (for gdb)
+* Install and configure GEF (for gdb)
 * Setup the bash prompt appearance
 * Configure the gnome.terminal dash-to-doc icon to auto launch bash with tmux
+* Remove extra icons from dash-to-doc (only leaves Firefox, Terminal, Nautilus, Burp)
 
 ### .tmux.conf
 * Inceases history limit to 50000 lines
@@ -19,8 +20,14 @@ scripts and config files to auto config new kali bash environments
 
 ### .gdbinit
 * Sets disassembly-flavor to intel
-* PEDA is setup by config.sh
+* GEF is installed and configured by config.sh
 
 ### .vimrc
 * Sets tab length to 4
 * Expands tabs to spaces
+
+## TODO
+* GEF dependencies don't 100% work, missing assemble and set-permission commands
+* Only tested on Kali 2018.1. Want to detect other OS and distros and get them setup
+* Add other things, such as checking for python3, requests, scapy, install gobuster, etc
+* Modularize to make it easier for others to fork and adapt to what they want
