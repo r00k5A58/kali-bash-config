@@ -3,12 +3,13 @@ scripts and config files to auto config new kali bash environments
 
 ### config.sh
 * Run after cloning. This will:
+* Setup apt for https
 * Install golang, export GOPATH
 * Copy the config files to their appropriate places
 * Install and configure GEF (for gdb)
 * Setup the bash prompt appearance
-* Configure the gnome.terminal dash-to-doc icon to auto launch bash with tmux
-* Remove extra icons from dash-to-doc (only leaves Firefox, Terminal, Nautilus, Burp)
+* Configure the gnome.terminal dash-to-dock icon to auto launch bash with tmux
+* Remove extra icons from dash-to-dock (only leaves Firefox, Terminal, Nautilus, Burp)
 
 ### .tmux.conf
 * Inceases history limit to 50000 lines
