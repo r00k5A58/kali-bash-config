@@ -10,6 +10,8 @@ scripts and config files to auto config new kali bash environments
 * Setup the bash prompt appearance
 * Configure the gnome.terminal dash-to-dock icon to auto launch bash with tmux
 * Remove extra icons from dash-to-dock (only leaves Firefox, Terminal, Nautilus, Burp)
+* Install gobuster
+* Install dirsearch
 
 ### .tmux.conf
 * Inceases history limit to 50000 lines
@@ -30,5 +32,5 @@ scripts and config files to auto config new kali bash environments
 ## TODO
 * GEF dependencies don't 100% work, missing assemble and set-permission commands
 * Only tested on Kali 2018.1. Want to detect other OS and distros and get them setup
-* Add other things, such as checking for python3, requests, scapy, install gobuster, etc
+* Add other things, such as checking for python3, requests, scapy, etc
 * Modularize to make it easier for others to fork and adapt to what they want
